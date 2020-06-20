@@ -4,8 +4,11 @@ import java.util.Random;
 import java.util.Set;
 
 public class Game {
-    ArrayList<Coordinates> set = new ArrayList<Coordinates>();
-    ArrayList<Coordinates> edges = new ArrayList<Coordinates>();
+    ArrayList<Coordinates> set;
+
+    public Game(ArrayList<Coordinates> arr){
+        this.set = arr;
+    }
 
     public void startGame(int numbers, int threads, int seconds) {
         Random r = new Random();
@@ -20,5 +23,4 @@ public class Game {
             }
         }
     }
-
 }
