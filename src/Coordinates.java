@@ -1,7 +1,13 @@
 public class Coordinates {
-    public double x_coordinate;
-    public double y_coordinate;
+    public double x_coordinate; // X coordinate point
+    public double y_coordinate; // Y coordinate point
 
+    /**
+     * Constructor
+     *
+     * @param x
+     * @param y
+     */
     public Coordinates(double x, double y){
         x_coordinate = x;
         y_coordinate = y;
@@ -9,6 +15,6 @@ public class Coordinates {
 
     @Override
     public String toString() {
-        return "(" + x_coordinate + ", " + y_coordinate+")";
+        return "(" + String.format("%.2f", x_coordinate) + ", " + String.format("%.2f", y_coordinate)+")";
     }
 }
