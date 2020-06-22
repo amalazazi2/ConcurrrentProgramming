@@ -29,7 +29,7 @@ public class Main {
         // Getting number of seconds (m)
         System.out.print("Please type in number of seconds: ");
         int m = in.nextInt();
-
+        
         // Initialize Game object which controls the game (random points generation & ArrayLists)
         Game game = new Game();
 
