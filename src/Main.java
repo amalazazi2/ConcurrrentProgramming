@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Timer;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -39,7 +40,7 @@ public class Main {
         ExecutorService executor = Executors.newFixedThreadPool(t);
 
         // Submit t number of tasks to ExecutorService
-        for (int i=0; i<t; i++){
+        for (int i=0; i<n/2+1; i++){
             executor.submit(new ConnectingEdges(game));
         }
 
